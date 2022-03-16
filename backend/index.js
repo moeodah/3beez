@@ -29,8 +29,7 @@
  */
 app.get('/users', (request, response) => {
   response.set('Access-Control-Allow-Origin','*')
-  let users =[{
-  }]
+  let users =[]
 
   db.collection('users').get().then(snapshot => {
     snapshot.forEach((doc) => {
