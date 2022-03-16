@@ -1,0 +1,15 @@
+{
+  "users":{
+    "userID1":{
+      "name":"mohamad odah",
+      "email":"moeodah@gmail.com",
+      "password":"12345678"
+    },
+    "userID2":{
+      "name":"yousid odah",
+      "email":"yousif@gmail.com",
+      "password":"12345678"
+    }
+
+  }
+}
