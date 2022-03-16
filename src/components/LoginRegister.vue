@@ -66,7 +66,7 @@
 				})
         const onSubmit = async () => {
           await createUser({ ...formData })
-          formData.uid = ''
+          formData.uid = Math.floor(Math.random() * 99999) + 10000
           formData.name = ''
           formData.email = ''
           formData.password =''
