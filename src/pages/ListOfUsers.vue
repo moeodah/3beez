@@ -97,7 +97,6 @@ export default {
     { name: 'BankAccountNumber', label: 'BankAccountNumber', field: 'BankAccountNumber', sortable: true },
     { name: 'PassportId', label: 'Passport Number', field: 'PassportId', sortable: true },
     { name: 'PassportExpiry', label: 'Passpor tExpiry', field: 'PassportExpiry', sortable: true },
-    { name: 'uid', label: 'ID', field: 'uid', sortable: true },
   ]
     return {deleteUser,
       visibleColumns: ref([ 'name', 'PhoneNumber1','email','Nationality','bDate',
