@@ -52,7 +52,7 @@
           PhoneNumber2:'',
           Address1:'',
           Address2:'',
-          CivilID:'',
+          CivilId:'',
           CivilIdExpiry:'',
           DLExpiry:'',
           Passport:'',
@@ -66,7 +66,7 @@
 				})
         const onSubmit = async () => {
           await createUser({ ...formData })
-          formData.uid = Math.floor(Math.random() * 99999) + 10000
+          formData.uid = ''
           formData.name = ''
           formData.email = ''
           formData.password =''
@@ -81,7 +81,7 @@
           formData.PhoneNumber2=''
           formData.Address1 = ''
           formData.Address2 = ''
-          formData.CivilID = ''
+          formData.CivilId = ''
           formData.CivilIdExpiry = ''
           formData.DLExpiry = ''
           formData.Passport = ''

@@ -199,7 +199,7 @@
         <tr class="text-center">
           <td>
             <q-input
-              v-model="form.bankName"
+              v-model="form.BankName"
               filled
               lazy-rules
               label="Bank Name"
@@ -250,7 +250,7 @@ export default {
       DateOfHire:'',
       BankAccountNumber:'',
       Iban:'',
-      bankName:'',
+      BankName:'',
       Salary:''
 
     });
@@ -262,6 +262,7 @@ export default {
       form.email = user.email
       form.bDate = user.bDate
       form.Gender = user.Gender
+      form.EmployeeNumber=user.EmployeeNumber
       form.MartialStatus = user.MartialStatus
       form.Nationality=user.Nationality
       form.Education= user.Education
@@ -270,7 +271,7 @@ export default {
       form.email2 = user.email2
       form.Address1 = user.Address1
       form.Address2 = user.Address2
-      form.CivilID = user.CivilID
+      form.CivilId = user.CivilId
       form.CivilIdExpiry = user.CivilIdExpiry
       form.DLExpiry = user.DLExpiry
       form.Passport = user.Passport
@@ -279,7 +280,7 @@ export default {
       form.DateOfHire = user.DateOfHire
       form.BankAccountNumber = user.BankAccountNumber
       form.Iban = user.Iban
-      form.bankName = user.bankName
+      form.BankName = user.BankName
       form.Salary = user.Salary
 
 
@@ -300,7 +301,7 @@ export default {
       form.PhoneNumber2=''
       form.Address1 = ''
       form.Address2 = ''
-      form.CivilID = ''
+      form.CivilId = ''
       form.CivilIdExpiry = ''
       form.DLExpiry = ''
       form.Passport = ''
@@ -309,7 +310,7 @@ export default {
       form.DateOfHire =''
       form.BankAccountNumber = ''
       form.Iban = ''
-      form.bankName = ''
+      form.BankName = ''
       form.Salary = ''
     };
     const bar = ref(null)

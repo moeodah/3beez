@@ -81,7 +81,7 @@ export default {
     { name: 'PhoneNumber1', align: 'center', label: 'Phone Number', field: 'PhoneNumber1', sortable: true },
     { name: 'PhoneNumber2', align: 'center', label: 'Phone Number 2', field: 'PhoneNumber2', sortable: true },
     { name: 'DLExpiry', align: 'center', label: 'Driver License Expiry', field: 'DLExpiry', sortable: true },
-    { name: 'CivilID', align: 'center', label: 'Civil Id', field: 'CivilID', sortable: true },
+    { name: 'CivilId', align: 'center', label: 'Civil Id', field: 'CivilId', sortable: true },
     { name: 'CivilIdExpiry', align: 'center', label: 'Civil Id Expiry', field: 'CivilIdExpiry', sortable: true },
     { name: 'Employment', align: 'center', label: 'Employment', field: 'Employment', sortable: true },
     { name: 'DateOfHire', align: 'center', label: 'Date Of Hire', field: 'DateOfHire', sortable: true },
