@@ -83,7 +83,7 @@ export default {
     { name: 'DLExpiry', align: 'center', label: 'Driver License Expiry', field: 'DLExpiry', sortable: true },
     { name: 'CivilID', align: 'center', label: 'Civil Id', field: 'CivilID', sortable: true },
     { name: 'CivilIdExpiry', align: 'center', label: 'Civil Id Expiry', field: 'CivilIdExpiry', sortable: true },
-    { name: 'Employement', align: 'center', label: 'Employement', field: 'Employement', sortable: true },
+    { name: 'Employment', align: 'center', label: 'Employment', field: 'Employment', sortable: true },
     { name: 'DateOfHire', align: 'center', label: 'Date Of Hire', field: 'DateOfHire', sortable: true },
     { name: 'MartialStatus', align: 'center', label: 'Martial Status', field: 'MartialStatus', sortable: true },
     { name: 'bDate', align: 'center', label: 'Date Of Birth', field: 'bDate', sortable: true },
@@ -95,7 +95,7 @@ export default {
     { name: 'Salary', label: 'Salary', field: 'Salary', sortable: true },
     { name: 'Iban', label: 'IBAN', field: 'Iban', sortable: true },
     { name: 'BankAccountNumber', label: 'BankAccountNumber', field: 'BankAccountNumber', sortable: true },
-    { name: 'PassportId', label: 'Passport Number', field: 'PassportId', sortable: true },
+    { name: 'Passport', label: 'Passport Number', field: 'Passport', sortable: true },
     { name: 'PassportExpiry', label: 'Passpor tExpiry', field: 'PassportExpiry', sortable: true },
   ]
     return {deleteUser,

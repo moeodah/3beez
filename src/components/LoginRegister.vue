@@ -52,7 +52,7 @@
           PhoneNumber2:'',
           Address1:'',
           Address2:'',
-          CivilId:'',
+          CivilID:'',
           CivilIdExpiry:'',
           DLExpiry:'',
           Passport:'',
@@ -81,7 +81,7 @@
           formData.PhoneNumber2=''
           formData.Address1 = ''
           formData.Address2 = ''
-          formData.CivilId = ''
+          formData.CivilID = ''
           formData.CivilIdExpiry = ''
           formData.DLExpiry = ''
           formData.Passport = ''

@@ -262,7 +262,6 @@ export default {
       form.email = user.email
       form.bDate = user.bDate
       form.Gender = user.Gender
-      form.EmployeeNumber=user.EmployeeNumber
       form.MartialStatus = user.MartialStatus
       form.Nationality=user.Nationality
       form.Education= user.Education
@@ -271,7 +270,7 @@ export default {
       form.email2 = user.email2
       form.Address1 = user.Address1
       form.Address2 = user.Address2
-      form.CivilId = user.CivilId
+      form.CivilID = user.CivilID
       form.CivilIdExpiry = user.CivilIdExpiry
       form.DLExpiry = user.DLExpiry
       form.Passport = user.Passport
@@ -301,7 +300,7 @@ export default {
       form.PhoneNumber2=''
       form.Address1 = ''
       form.Address2 = ''
-      form.CivilId = ''
+      form.CivilID = ''
       form.CivilIdExpiry = ''
       form.DLExpiry = ''
       form.Passport = ''
