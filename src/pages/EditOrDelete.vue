@@ -17,7 +17,7 @@
         <tr v-for="{ id, name,
                           } in users" :key="id">
                     <td class="text-left">{{name}}</td>
-          <td class="text-left" >{{id}}</td>
+          <td class="text-left" >{{uid}}</td>
           <td>
             <router-link :to="`/edit/${id}`">
               <q-btn round color="primary" icon="edit" />
