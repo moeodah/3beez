@@ -9,15 +9,17 @@
       <thead dark class="bg-indigo-8 text-white">
         <tr>
           <th color="primary" class="text-left">Full Name</th>
-          <th class="text-left">id</th>
+          <th class="text-left">UID</th>
+          <th class="text-left">Db ID</th>
           <th class="text-left">Action</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="{ id, name,
+        <tr v-for="{ id, name, uid
                           } in users" :key="id">
                     <td class="text-left">{{name}}</td>
           <td class="text-left" >{{uid}}</td>
+          <td class="text-left" >{{id}}</td>
           <td>
             <router-link :to="`/edit/${id}`">
               <q-btn round color="primary" icon="edit" />

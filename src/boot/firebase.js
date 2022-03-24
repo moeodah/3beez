@@ -3,6 +3,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import { ref, onUnmounted } from 'vue'
+import { getDatabase } from "firebase/database";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -24,10 +25,12 @@ const app = firebase.initializeApp(firebaseConfig);
 let firebaseAuth = app.auth()
 const db = app.firestore()
 const usersCollection = db.collection('users')
-export {firebaseAuth,usersCollection}
+const database = getDatabase();
+export {firebaseAuth,database}
 
 
 export const createUser = user => {
+  console.log("user Created")
   return usersCollection.add(user)
 }
 

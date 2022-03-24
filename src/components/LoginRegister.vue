@@ -1,21 +1,23 @@
 <template>
-	<q-form @submit.prevent="onSubmit">
+	<q-form @submit.prevent="onSubmit(); submitForm()" >
       <q-input
-			v-if="tab == 'register'"
 			v-model="formData.name"
 			class="q-mb-md"
 			outlined
+      required
 			label="Name" />
 		<q-input
 			v-model="formData.email"
 			class="q-mb-md"
 			outlined
+      required
 			type="email"
 			label="Email" />
 		<q-input
 			v-model="formData.password"
 			class="q-mb-md"
 			outlined
+      required
 			type="password"
 			label="Password" />
 		<div class="row">
@@ -66,7 +68,8 @@
 				})
         const onSubmit = async () => {
           await createUser({ ...formData })
-          formData.uid = ''
+          console.log("creating a user")
+          formData.uid = Math.floor(Math.random() * 99999) + 10000
           formData.name = ''
           formData.email = ''
           formData.password =''
@@ -92,6 +95,8 @@
           formData.Iban = ''
           formData.BankName = ''
           formData.Salary = ''
+          //this.registerUser(this.formData)
+          alert("registered")
         }
         return { formData, onSubmit }
       },
@@ -101,12 +106,9 @@
 		methods: {
 			...mapActions('store', ['registerUser', 'loginUser']),
 			submitForm() {
-				if (this.tab == 'login') {
-					this.loginUser(this.formData)
-				}
-				else {
+          //createUser(this.formData)
 					this.registerUser(this.formData)
-				}
+
 			}
 		}
 	}

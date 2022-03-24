@@ -55,6 +55,8 @@
 <script>
 //onst axios = require('axios');
 import axios, * as others from 'axios';
+import { exportFile, useQuasar } from 'quasar'
+
 import { useLoadUsers, deleteUser ,usersCollection} from '../boot/firebase'
 import { ref } from 'vue'
 export default {
