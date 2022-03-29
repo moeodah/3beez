@@ -12,7 +12,6 @@ const routes = [
       { path: '/login', component: () => import('pages/Login.vue') },
       { path: '/loginonly', component: () => import('pages/LoginOnly.vue') },
       { path: '/listofUsers', component: () => import('pages/ListOfUsers.vue') },
-      { path: '/times', component: () => import('pages/Times.vue') },
       { path: '/editordelete', component: () => import('pages/EditOrDelete.vue') },
       {
         path: '/edit/:id',
