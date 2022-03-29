@@ -4,10 +4,8 @@
 
 
  const express = require('express')
- const mongodb = require('mongodb')
   const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
   const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
-const { MongoDBNamespace } = require('mongodb');
 
 
 /**
@@ -43,14 +41,6 @@ app.get('/users', (request, response) => {
     });
   response.send(users)})
   })
-
-async function loadposts(){
-  const client = await mongodb.MongoClient.connect(
-    ('mongodb+srv://Yousefodah:<12344321>@cluster0.rp1mq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
-    );
-    return client.db('vue_express').collection('users');
-
-}
 //export{users}
 
 app.listen(process.env.PORT || 3000)
